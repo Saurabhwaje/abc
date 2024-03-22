@@ -5,7 +5,7 @@
   align-items: center;
   padding: 3rem 0;
   height: 100vh;
-  background-image: url('../../assets/images/fd.jpg');
+  background-image: url('../../assets/images/jgk.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -38,4 +38,13 @@
   font-size: 1.2rem;
   color: #333;
   margin: 0;
+}
+
+.contact-info a {
+  text-decoration: none; /* Remove underline from anchor links */
+  color: #333; /* Set the color for the links */
+}
+
+.contact-info a:hover {
+  color: #007bff; /* Change color on hover */
 }

@@ -1,4 +1,6 @@
 import { Component, HostListener } from '@angular/core';
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 @Component({
   selector: 'app-root',

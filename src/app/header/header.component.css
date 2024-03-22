@@ -1,0 +1,45 @@
+   
+    /* Header Component */
+  
+    .header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      color: #333;
+      background-color: #333;
+    }
+  
+    .my-toolbar {
+      background-color: #333;
+    }
+    
+    .logo {
+      font-size: 1.5rem;
+    }
+    
+    .logo-link {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .spacer {
+      flex: 1 1 auto;
+    }
+    
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      margin-left: 16px;
+    }
+  
+    .navbar{
+      color: #333;
+      background-color: #333;
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+    .mat-toolbar{
+      /* color: #676767; */
+      background-color: #333;
+    }

@@ -1,0 +1,37 @@
+<!-- about.component.html -->
+
+<section class="about-section">
+  <div class="about-container">
+    <div class="about-content">
+      <div class="about-image-section" [@fadeIn]="animationState">
+        <img
+          src="../../assets/images/20240308_210208.jpg"
+          alt="Profile Photo"
+          class="about-profile-photo"
+        />
+      </div>
+      <div class="about-content-section" [@fadeIn]="animationState">
+        <p class="about-welcome-message">Get to know more</p>
+        <h2 class="about-title">About Me</h2>
+        <p class="about-paragraph">
+          Full-Stack Developer with over 10 years of experience building
+          high-performance web applications and secure APIs. Proficient in
+          Angular, Node.js, NestJS, and more. Passionate about delivering
+          impactful solutions and enhancing user experiences.
+        </p>
+        <div class="social-links">
+          <a
+            href="https://www.linkedin.com/in/saurabhwaje"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <!-- Add more social media links as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- <app-skills></app-skills> -->
+<!-- <router-outlet></router-outlet> -->

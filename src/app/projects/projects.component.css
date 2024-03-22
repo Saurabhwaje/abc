@@ -1,0 +1,93 @@
+/* Projects Main section styling */
+.journey {
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+  background-image: url('../../assets/images/fd3.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  height: auto; /* Adjusted height to fit content */
+  min-height: 100vh; /* Ensure minimum height of viewport */
+  display: flex;
+  flex-direction: column; /* Changed to column layout for responsiveness */
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* Journey container */
+.journey-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Experience and Education sections */
+.experience,
+.education {
+  width: 100%; /* Adjusted width for more spacing */
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Increase space between experience and education */
+.education {
+  margin-left: 20px; /* Added margin to create space between the boxes */
+}
+
+.journey-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+/* Experience and Education content styling */
+.company,
+.institution {
+  font-weight: bold;
+}
+
+.role,
+.degree {
+  margin-top: 0.5rem;
+  color: #666;
+  font-style: bold;
+}
+
+.duration,
+.graduation-year {
+  margin-top: 0.5rem;
+  color: #999;
+}
+
+.expanded-details {
+  margin-top: 1rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+}
+
+.expanded-details.ng-enter {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.expanded-details.ng-leave {
+  opacity: 0;
+  transform: translateY(-10px);
+}

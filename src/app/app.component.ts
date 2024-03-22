@@ -1,10 +1,22 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'portfolio3';
+  showSkillsSection = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // Check the scroll position
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+    // Set a threshold value to trigger the display of skills section
+    const threshold = 500; // Adjust as needed
+
+    // If the scroll position is greater than the threshold, show the skills section
+    this.showSkillsSection = scrollPosition > threshold;
+  }
 }

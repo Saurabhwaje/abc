@@ -1,0 +1,33 @@
+<section class="journey">
+  <h2 class="section-title">My Journey</h2>
+  <div class="journey-container">
+    <div class="experience" (click)="expandExperience()">
+      <h3 class="journey-title">Experience</h3>
+      <div class="journey-content">
+        <p class="role">Full-Stack Developer</p>
+        <p class="duration">Jan 2020 - Present</p>
+      </div>
+      <!-- Additional details for experience -->
+      <div class="expanded-details" *ngIf="expandedExperience">
+        <p class="company">CompuMatrice</p>
+        <p class="job-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+          consectetur arcu, eu sollicitudin felis. In eu mollis sapien.
+        </p>
+      </div>
+    </div>
+    <div class="education" (click)="expandEducation()">
+      <h3 class="journey-title">Education</h3>
+      <div class="journey-content">
+        <p class="degree">Bachelor of Engineering in Computers</p>
+        <p class="graduation-year">Graduated: 2022</p>
+        <p class="degree">12th Science + Computer Science Vocational</p>
+        <p class="graduation-year">Completed: 2018</p>
+      </div>
+      <!-- Additional details for education -->
+      <div class="expanded-details" *ngIf="expandedEducation">
+        <!-- Additional education details here -->
+      </div>
+    </div>
+  </div>
+</section>

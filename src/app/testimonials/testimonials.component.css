@@ -1,0 +1,37 @@
+.testimonials {
+    padding: 3rem 0;
+    background-color: #f9f9f9; /* Set background color */
+  }
+  
+  .testimonials-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .testimonials-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .testimonials-slider {
+    /* Add styles for slider if using */
+  }
+  
+  .testimonial {
+    margin-bottom: 2rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .client-name {
+    font-weight: bold;
+  }
+  
+  .client-title {
+    font-style: italic;
+  }
+  

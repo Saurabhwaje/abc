@@ -1,0 +1,41 @@
+.contacts-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+  height: 100vh;
+  background-image: url('../../assets/images/fd.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.contacts-container {
+  max-width: 600px;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #007bff;
+}
+
+.contact-info p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+}

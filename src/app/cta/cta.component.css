@@ -1,0 +1,87 @@
+.journey-section {
+  padding: 3rem 0;
+  text-align: center;
+  height: 100vh; /* Set height to 100vh */
+  min-height: auto;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('../../assets/images/greg-rosenke-xsb1UENAwL4-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  margin-top: 5%;
+}
+
+.journey-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  height: auto;
+}
+
+.experience-box,
+.education-box {
+  width: calc(46% - 5px);
+  margin: 10px;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  animation: boxSlideIn 1s ease forwards;
+}
+
+.education-box {
+  margin-left: 20px;
+}
+
+.experience-box:hover,
+.education-box:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.journey-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.job-role,
+.degree {
+  margin-top: 0.5rem;
+  color: #666;
+  font-style: bold;
+}
+
+.duration,
+.graduation-year {
+  margin-top: 0.5rem;
+  color: #999;
+}
+
+.job-description ul {
+  padding-left: 20px;
+}
+
+.job-description li {
+  margin-bottom: 0.5rem;
+}
+
+@keyframes boxSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

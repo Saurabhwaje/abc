@@ -1,0 +1,115 @@
+/* about.component.css */
+
+.about-section {
+  position: relative;
+  padding: 3rem 0;
+  background-color: #f9f9f9;
+  background-image: url('../../assets/images/bvcxz.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Set height to 100vh */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content vertically */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Fade-in animation */
+.fade-in-section {
+  opacity: 1;
+}
+
+#about-para {
+  color: #333;
+  font-size: 1rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Container for content */
+.about-container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Content section */
+.about-content {
+  display: flex;
+  flex-direction: column; /* Align items in a column */
+  align-items: center; /* Center items horizontally */
+}
+
+/* Profile picture section */
+.about-image-section {
+  margin-bottom: 20px;
+}
+
+/* Profile picture styling */
+.about-profile-photo {
+  width: auto;
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+/* Additional styling for about me section */
+.about-content-section {
+  text-align: center; /* Center-align text */
+  color: #333;
+  padding: 0 20px; /* Add some horizontal padding */
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 70px; /* Increase the size of the icon */
+  margin-right: 0.5rem; /* Adjust spacing between icon and text */
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.about-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.about-welcome-message {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Button styling */
+.about-btn {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.about-btn:hover {
+  background-color: #0056b3;
+}
+
+
+@media screen and (max-width: 768px) {
+  .about-content {
+    align-items: center;
+  }
+
+  .about-image-section {
+    margin-bottom: 20px;
+  }
+
+  .about-content-section {
+    margin-top: 0;
+  }
+}

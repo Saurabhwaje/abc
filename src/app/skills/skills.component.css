@@ -1,0 +1,81 @@
+/* skills.component.css */
+
+.skills-section {
+  font-family: 'Montserrat', sans-serif;
+  padding: 3rem 0;
+  text-align: center;
+  height: auto;
+  min-height: 100vh; /* Set height to 100vh */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../../assets/images/gfds.jpg');  /* Optional: add texture image */
+  background-size: cover;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item {
+  margin: 1rem;
+  padding: 1.5rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.skill-item i {
+  font-size: 4rem; /* Increased icon size */
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.skill-item:hover i {
+  color: #333;
+}
+
+.skill-name {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  color: #333;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-item {
+    width: 90%;
+    max-width: 300px;
+    margin: 0.5rem auto;
+  }
+
+  .skills-container {
+    max-width: 90%;
+  }
+}

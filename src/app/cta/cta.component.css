@@ -1,20 +1,24 @@
+/* Add this to your global styles or app.component.css */
+html {
+  scroll-behavior: smooth;
+}
+
 .journey-section {
   padding: 3rem 0;
   text-align: center;
-  height: 100vh; /* Set height to 100vh */
-  min-height: auto;
+  min-height: 80vh;
   font-family: 'Montserrat', sans-serif;
-  background-image: url('../../assets/images/greg-rosenke-xsb1UENAwL4-unsplash.jpg');
+  background-color: #f6dbed;
+  height: auto;
+  /* background-image: url('../../assets/images/greg-rosenke-xsb1UENAwL4-unsplash.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 
 .section-title {
-  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
-  margin-bottom: 2rem;
+  margin: 5% 0 2rem;
   color: #333;
-  margin-top: 5%;
 }
 
 .journey-container {
@@ -24,19 +28,18 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  height: auto;
 }
 
 .experience-box,
 .education-box {
-  width: calc(46% - 5px);
+  width: calc(46% - 20px);
   margin: 10px;
-  padding: 0.5rem;
+  padding: 1rem;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  display: inline-block;
-  animation: boxSlideIn 1s ease forwards;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
 }
 
 .education-box {
@@ -58,7 +61,7 @@
 .degree {
   margin-top: 0.5rem;
   color: #666;
-  font-style: bold;
+  font-weight: bold;
 }
 
 .duration,
@@ -69,6 +72,7 @@
 
 .job-description ul {
   padding-left: 20px;
+  margin-top: 0.5rem;
 }
 
 .job-description li {
@@ -84,4 +88,16 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.arrow-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.arrow-icon:hover {
+  cursor: pointer;
 }

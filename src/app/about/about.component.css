@@ -1,11 +1,18 @@
 /* about.component.css */
 
+/* Add this to your global styles or app.component.css */
+html {
+  scroll-behavior: smooth;
+}
+
+
 .about-section {
   position: relative;
   padding: 3rem 0;
-  background-color: #f9f9f9;
-  background-image: url('../../assets/images/bvcxz.jpg');
-  background-size: cover;
+  /* background-color: rgb(247, 237, 226); */
+  background-color: #fff9e3;
+  /* background-image: url('../../assets/images/bvcxz.jpg'); */
+  /* background-size: cover; */
   background-position: center;
   height: 100vh; /* Set height to 100vh */
   display: flex;
@@ -113,3 +120,11 @@
     margin-top: 0;
   }
 }
+
+.contact-info {
+  font-size: 14px;
+  margin-top: 5px;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+}
+

@@ -3,10 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
-  styleUrls: ['./skills.component.css']
+  styleUrls: ['./skills.component.css'],
 })
 export class SkillsComponent implements OnInit {
-  skills: { name: string, iconClass: string }[] = [
+  skills: { name: string; iconClass: string }[] = [
     { name: 'Angular', iconClass: 'fab fa-angular' },
     { name: 'React', iconClass: 'fab fa-react' },
     { name: 'Vue.js', iconClass: 'fab fa-vuejs' },
@@ -26,11 +26,17 @@ export class SkillsComponent implements OnInit {
     { name: 'GraphQL', iconClass: 'fas fa-database' },
     { name: 'RESTful API', iconClass: 'fas fa-code' },
     { name: 'Docker', iconClass: 'fab fa-docker' },
-    { name: 'Kubernetes', iconClass: 'fas fa-network-wired' }
+    { name: 'Kubernetes', iconClass: 'fas fa-network-wired' },
     // Add more relevant skills as needed
   ];
 
-  constructor() { }
+  constructor() {}
+
+  showAdditionalSkills: boolean = false;
+
+  toggleAdditionalSkills() {
+    this.showAdditionalSkills = !this.showAdditionalSkills;
+  }
 
   ngOnInit(): void {
     this.shuffleSkills();

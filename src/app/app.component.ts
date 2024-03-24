@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
 import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -8,17 +9,5 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  showSkillsSection = false;
-
-  @HostListener('window:scroll', [])
-  onWindowScroll() {
-    // Check the scroll position
-    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-
-    // Set a threshold value to trigger the display of skills section
-    const threshold = 500; // Adjust as needed
-
-    // If the scroll position is greater than the threshold, show the skills section
-    this.showSkillsSection = scrollPosition > threshold;
-  }
+  currentYear:number = 2024;
 }

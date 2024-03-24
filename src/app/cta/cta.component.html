@@ -1,66 +1,138 @@
-<section class="journey-section">
-  <h2 class="section-title">My Journey</h2>
-  <div class="journey-container">
-    <div class="experience-box" [@boxAnimation]="boxState">
-      <h3 class="journey-title">Experience</h3>
-      <div class="journey-content">
-        <p class="job-role">Full-Stack Developer | CompuMatrice</p>
-        <p class="duration">Aug 2022 - Dec 2023</p>
-        <div class="job-description">
-          <ul>
-            <li>
-              Contributed to the delivery of over 10 web application components,
-              microservices, and POCs using Angular, NestJS, Node.js, and Java,
-              ensuring seamless integration and comprehensive documentation.
-            </li>
-            <li>
-              Collaborated with cross-functional teams in the design,
-              development, and maintenance of these applications, resulting in a
-              measurable 5-8% performance enhancement, reduced server load, and
-              improved user experience.
-            </li>
-            <li>
-              Played a key role in streamlining technology systems by
-              consolidating legacy platforms, leading to a significant 15%
-              reduction in operational costs and improved scalability.
-            </li>
-            <li>
-              Successfully participated in executing a POC integrating Twilio,
-              NestJS, Angular, and Dialogflow, with the potential for annual
-              cost savings ranging from 5-20%.
-            </li>
-            <li>
-              Contributed to optimizing testing processes, resulting in a
-              notable 25-30% reduction in testing time and enhanced overall
-              system performance.
-            </li>
-          </ul>
+<!-- <div class="cta" id="cta">
+  <section class="journey-section">
+    <h2 class="section-title">My Journey</h2>
+    <div class="journey-container">
+      <div
+        class="experience-box"
+        [@boxAnimation]="boxState"
+        (click)="toggleExperienceDetails()"
+      >
+        <h3 class="journey-title">Experience</h3>
+        <div class="journey-content">
+          <p class="job-role">Full-Stack Developer</p>
+          <p class="job-role">CompuMatrice</p>
+          <p class="duration">Aug 2022 - Dec 2023</p>
+          <div class="job-description" *ngIf="showExperienceDetails">
+      
+            <ul>
+              <li>
+                Contributed to the delivery of over 10 web application
+                components, microservices, and POCs using Angular, NestJS,
+                Node.js, and Java, ensuring seamless integration and
+                comprehensive documentation.
+              </li>
+              <li>
+                Collaborated with cross-functional teams in the design,
+                development, and maintenance of these applications, resulting in
+                a measurable 5-8% performance enhancement, reduced server load,
+                and improved user experience.
+              </li>
+              <li>
+                Played a key role in streamlining technology systems by
+                consolidating legacy platforms, leading to a significant 15%
+                reduction in operational costs and improved scalability.
+              </li>
+              <li>
+                Successfully participated in executing a POC integrating Twilio,
+                NestJS, Angular, and Dialogflow, with the potential for annual
+                cost savings ranging from 5-20%.
+              </li>
+              <li>
+                Contributed to optimizing testing processes, resulting in a
+                notable 25-30% reduction in testing time and enhanced overall
+                system performance.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="education-box" [@boxAnimation]="boxState">
+        <h3 class="journey-title">Education</h3>
+        <div class="journey-content">
+          <p class="degree">Bachelor of Engineering in Computers</p>
+          <p class="graduation-year">Graduated: 2022</p>
+          <div class="education-description">
+            <p>
+              Specialized in data structures, object-oriented programming,
+              software development, and more.
+            </p>
+          </div>
+          <p class="degree">12th Science + Computer Science Vocational</p>
+          <p class="graduation-year">Completed: 2018</p>
+          <div class="education-description">
+            <p>
+              Science curriculum including physics, chemistry, mathematics, and
+              computer science. Developed teamwork and creativity through
+              practical exercises.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-    <div class="education-box" [@boxAnimation]="boxState">
-      <h3 class="journey-title">Education</h3>
-      <div class="journey-content">
-        <p class="degree">Bachelor of Engineering in Computers</p>
-        <p class="graduation-year">Graduated: 2022</p>
-        <div class="education-description">
-          <p>
-            Specialized in data structures, object-oriented programming,
-            software development, and more.
-          </p>
-        </div>
-        <p class="degree">12th Science + Computer Science Vocational</p>
-        <p class="graduation-year">Completed: 2018</p>
-        <div class="education-description">
-          <p>
-            Science curriculum including physics, chemistry, mathematics, and
-            computer science. Developed teamwork and creativity through
-            practical exercises.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</div> -->
 
-<!-- <app-contact></app-contact> -->
+<div class="cta" id="cta">
+  <section class="journey-section">
+    <h2 class="section-title">My Journey</h2>
+    <div class="journey-container">
+      <div
+        class="experience-box"
+        [@boxAnimation]="boxState"
+        (click)="toggleExperienceDetails()"
+      >
+        <h3 class="journey-title">Experience</h3>
+        <div class="arrow-icon" *ngIf="!showExperienceDetails">
+          <i class="material-icons">expand_more</i>
+        </div>
+        <div class="journey-content">
+          <!-- Initially displayed work experience details -->
+          <p class="job-role">Full-Stack Developer</p>
+          <p class="job-role">CompuMatrice</p>
+          <p class="duration">Aug 2022 - Dec 2023</p>
+          <!-- Conditionally displayed ul for additional details -->
+          <div class="job-description" *ngIf="showExperienceDetails">
+            <!-- Work experience description -->
+            <ul>
+              <li>Spearheaded the delivery of over 10 web application components, microservices, and proof-of-concepts utilizing Angular, NestJS, Node.js, and Java, ensuring seamless integration and meticulous documentation.</li>
+              <li>Orchestrated collaborative efforts across cross-functional teams to conceptualize, develop, and sustain these applications, resulting in a notable 5-8% performance augmentation, decreased server load, and heightened user satisfaction.</li>
+              <li>Engineered streamlined technology ecosystems by centralizing legacy platforms, culminating in a remarkable 15% decrease in operational expenditures and heightened scalability.</li>
+              <li>Demonstrated proficiency in executing a proof-of-concept initiative integrating Twilio, NestJS, Angular, and Dialogflow, poised to deliver potential annual savings ranging from 5-20%.</li>
+              <li>Innovated testing methodologies, leading to a significant 25-30% reduction in testing duration while concurrently enhancing overall system efficacy.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="education-box"
+        [@boxAnimation]="boxState"
+        (click)="toggleEducationDetails()"
+      >
+        <h3 class="journey-title">Education</h3>
+        <div class="arrow-icon" *ngIf="!showEducationDetails">
+          <i class="material-icons">expand_more</i>
+        </div>
+        <div class="journey-content">
+          <!-- Initially displayed education details -->
+          <p class="degree">Bachelor of Engineering in Computers</p>
+          <p class="graduation-year">Graduated: 2022</p>
+          <p class="degree">12th Science + Computer Science Vocational</p>
+          <p class="graduation-year">Completed: 2018</p>
+          <!-- Conditionally displayed ul for additional details -->
+          <div class="education-description" *ngIf="showEducationDetails">
+            <!-- Education description -->
+            <p>
+              Specialized in data structures, object-oriented programming, software development, and more.
+              <br />
+              Science curriculum including physics, chemistry, mathematics, and computer science. Developed teamwork and creativity through practical exercises.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="another-container" *ngIf="showAnotherContainer">
+        <!-- Content to display when clicking on the experience or education container -->
+        <!-- This content will replace the respective container -->
+      </div>
+    </div>
+  </section>
+</div>

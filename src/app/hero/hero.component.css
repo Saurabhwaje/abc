@@ -1,12 +1,21 @@
+/* Add this to your global styles or app.component.css */
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* Ensure proper alignment of text and image */
 .hero-container {
-  background-color: #f5f5f5; /* Light textured background */
+  /* background-color: rgb(245, 229, 213); */
+  background-color: #ffecde;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   padding: 0 50px;
+  height: auto;
 }
+
 
 /* Style for hero content */
 .hero-content {

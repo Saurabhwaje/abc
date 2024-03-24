@@ -17,9 +17,30 @@ import { Router } from '@angular/router';
   ],
 })
 export class CtaComponent {
-
   constructor(private router: Router) {}
-  
+
+  // showExperienceDetails = false;
+
+  // toggleExperienceDetails() {
+  //   this.showExperienceDetails = !this.showExperienceDetails;
+  // }
+
+  ////////////////////////////////////////////////////////
+
+  showExperienceDetails = false;
+  showEducationDetails = false;
+  showAnotherContainer = false;
+
+  toggleExperienceDetails() {
+    this.showExperienceDetails = !this.showExperienceDetails;
+    this.showAnotherContainer = false; // Hide another container if experience details are shown
+  }
+
+  toggleEducationDetails() {
+    this.showEducationDetails = !this.showEducationDetails;
+    this.showAnotherContainer = false; // Hide another container if education details are shown
+  }
+
   boxState: string = 'fadeIn';
   loading: boolean = true;
 
@@ -43,5 +64,5 @@ export class CtaComponent {
   //       this.aboutLoaded = true;
   //     }
   //   }
-  // }  
+  // }
 }

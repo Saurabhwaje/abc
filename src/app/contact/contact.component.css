@@ -1,3 +1,9 @@
+/* Add this to your global styles or app.component.css */
+html {
+  scroll-behavior: smooth;
+}
+
+
 .contacts-section {
   display: flex;
   flex-direction: column;

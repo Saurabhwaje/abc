@@ -79,6 +79,11 @@
     font-size: 1.3em;
     padding-right: 70px;
   }
+
+  .mnb{
+    align-items: center;
+    text-align: center;
+  }
   
   
   .fade-in {

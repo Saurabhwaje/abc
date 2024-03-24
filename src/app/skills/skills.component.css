@@ -1,7 +1,13 @@
 /* skills.component.css */
+/* Add this to your global styles or app.component.css */
+html {
+  scroll-behavior: smooth;
+}
 
 .skills-section {
   font-family: 'Montserrat', sans-serif;
+  background-color: rgb(247, 235, 223);
+  /* background-color: #e7e9e2; */
   padding: 3rem 0;
   text-align: center;
   height: auto;
@@ -10,8 +16,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url('../../assets/images/gfds.jpg');  /* Optional: add texture image */
-  background-size: cover;
+  /* background-image: url('../../assets/images/gfds.jpg');  /* Optional: add texture image */
+  /* background-size: cover; */
 }
 
 .section-title {
@@ -79,3 +85,27 @@
     max-width: 90%;
   }
 }
+
+/* Add to your CSS */
+.toggle-button {
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #0056b3;
+}
+
+.additional-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+

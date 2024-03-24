@@ -8,8 +8,8 @@
   height: 100vh;
   padding: 0 50px;
   background-color: #f5f5f5; /* Light textured background */
-  background-image: url('../assets/images/drew-beamer-kUHfMW8awpE-unsplash.jpg');  /* Optional: add texture image */
-  background-size: cover;
+  /* background-image: url('../assets/images/drew-beamer-kUHfMW8awpE-unsplash.jpg');  
+  background-size: cover; */
 }
 
 .about-section {

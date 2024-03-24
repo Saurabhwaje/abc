@@ -2,9 +2,9 @@
 .journey {
   padding: 3rem 0;
   background-color: #f9f9f9;
-  background-image: url('../../assets/images/fd3.jpg');
-  background-size: cover;
-  background-position: center;
+  /* background-image: url('../../assets/images/fd3.jpg'); */
+  /* background-size: cover; */
+  /* background-position: center; */
   text-align: center;
   height: auto; /* Adjusted height to fit content */
   min-height: 100vh; /* Ensure minimum height of viewport */

@@ -3,20 +3,20 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .contacts-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 3rem 0;
-  height: 100vh;
+  height: auto; /* Change height to auto to allow content to expand */
   background-image: url('../../assets/images/jgk.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  font-family: 'Montserrat', sans-serif;
+  min-height: 90vh;
 }
-
 
 .section-title {
   font-size: 2.5rem;
@@ -24,33 +24,78 @@ html {
   color: #333;
 }
 
-.contacts-container {
-  max-width: 600px;
+.contact-message-container {
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  align-items: center; /* Center items horizontally */
+  margin-top: 3rem; /* Adjust top margin */
+}
+
+.message-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 30vw;
+  margin-bottom: 2rem; /* Add margin bottom */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.message-box:hover {
+  transform: translateY(-5px); /* Move box up on hover */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.message {
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center; /* Center text */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.contact-info-box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 25vw;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-info-box:hover {
+  transform: translateY(-5px); /* Move box up on hover */
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 .contact-info {
   display: flex;
   align-items: center;
-  margin-bottom: 1.5rem;
-}
-
-.contact-info i {
-  font-size: 1.5rem;
-  margin-right: 1rem;
-  color: #007bff;
+  margin-bottom: 1rem;
 }
 
 .contact-info p {
   font-size: 1.2rem;
   color: #333;
-  margin: 0;
+  margin-left: 10px;
 }
 
-.contact-info a {
-  text-decoration: none; /* Remove underline from anchor links */
-  color: #333; /* Set the color for the links */
+.contact-info i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: #007bff;
 }
 
-.contact-info a:hover {
-  color: #007bff; /* Change color on hover */
+.contact-social {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  margin-left: 32%;
+}
+
+.contact-social .contact-info {
+  margin-right: 15px;
+}
+
+.contact-title {
+  text-align: center;
 }

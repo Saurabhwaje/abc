@@ -99,3 +99,67 @@ html {
 .contact-title {
   text-align: center;
 }
+
+/* Add this to your global styles or app.component.css */
+
+/* Font and icon sizes for smaller screens */
+@media screen and (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .message-box {
+    width: 80vw;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+
+  .contact-info-box {
+    width: 80vw;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  .contact-info i {
+    font-size: 1.2rem;
+  }
+
+  .contact-social {
+    margin-left: 10%;
+  }
+}
+
+/* Font and icon sizes for even smaller screens */
+@media screen and (max-width: 480px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .message-box {
+    width: 90vw;
+  }
+
+  .message {
+    font-size: 0.9rem;
+  }
+
+  .contact-info-box {
+    width: 90vw;
+  }
+
+  .contact-info p {
+    font-size: 0.9rem;
+  }
+
+  .contact-info i {
+    font-size: 1rem;
+  }
+
+  .contact-social {
+    margin-left: 5%;
+  }
+}

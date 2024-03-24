@@ -32,7 +32,7 @@ html {
 }
 
 .message-box {
-  background-color: #fff;
+  background-color: #e9f9fa;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -54,7 +54,7 @@ html {
 }
 
 .contact-info-box {
-  background-color: #fff;
+  background-color: #fbf0fb;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);

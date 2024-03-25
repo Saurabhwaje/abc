@@ -18,7 +18,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MatChipsModule } from '@angular/material/chips';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectsComponent } from './projects/projects.component';
-import { FooterComponent } from './footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 
@@ -35,7 +34,7 @@ import { MatIconModule } from '@angular/material/icon';
     TestimonialsComponent,
     ContactComponent,
     ProjectsComponent,
-    FooterComponent,
+    
   ],
   imports: [
     BrowserModule,

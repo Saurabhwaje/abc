@@ -90,7 +90,7 @@ html {
   }
 }
 
-.arrow-icon {
+/* .arrow-icon {
   position: absolute;
   bottom: 10px;
   right: 10px;
@@ -100,7 +100,7 @@ html {
 
 .arrow-icon:hover {
   cursor: pointer;
-}
+} */
 
 .cta-box {
   margin: 10px;

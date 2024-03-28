@@ -140,3 +140,7 @@ button {
 button:hover {
   background-color: #0056b3; /* Change background color on hover */
 }
+
+.icon-wrapper, .material-icons{
+  color: #333;
+}

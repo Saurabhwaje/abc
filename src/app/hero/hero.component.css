@@ -79,10 +79,12 @@ html {
 .primary {
   background-color: #ff5733; /* Match button background color with hero component color */
   color: white; /* Text color */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .primary:hover {
   background-color: #e74c3c; /* Darker shade on hover */
+  transform: translateY(-3px);
 }
 
 /* Image content */

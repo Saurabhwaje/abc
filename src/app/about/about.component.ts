@@ -21,7 +21,17 @@ import {
   ],
 })
 export class AboutComponent implements OnInit {
+
   animationState: string = 'in';
+
+  showAdditionalContent: boolean = false;
+
+  toggleAdditionalContent() {
+    this.showAdditionalContent = !this.showAdditionalContent;
+  }
+  
+
+  // showAdditionalContent = false;
 
   ngOnInit(): void {}
 }

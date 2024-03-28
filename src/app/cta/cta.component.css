@@ -39,7 +39,8 @@ html {
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  transition: box-shadow 0.3s ease;
+  /* transition: box-shadow 0.3s ease; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .education-box {
@@ -49,6 +50,11 @@ html {
 .experience-box:hover,
 .education-box:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+.experience-box:hover i,
+.education-box:hover i{
+  color: #fa9ada;
 }
 
 .journey-title {
@@ -113,7 +119,9 @@ html {
 }
 
 .cta-box:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Add this to your global styles or app.component.css */

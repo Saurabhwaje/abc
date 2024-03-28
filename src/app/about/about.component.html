@@ -1,4 +1,4 @@
-<div class="about" id="about">
+<!-- <div class="about" id="about">
   <section class="about-section">
     <div class="about-container">
       <div class="about-content">
@@ -25,7 +25,230 @@
               rel="noopener noreferrer"
             >
               <i class="fab fa-linkedin" style="margin-right: 5px"></i>
-              <!-- Add margin-right -->
+            </a>
+            <br />
+            <span class="contact-info"
+              >Contact: +917588553476 | Email:
+              saurabhwaje4770&#64;gmail.com</span
+            >
+          </div>
+          <button
+            class="what-i-bring-btn"
+            (click)="showAdditionalContent = !showAdditionalContent"
+          >
+            What I Bring
+          </button>
+          
+          <div *ngIf="showAdditionalContent" class="additional-content">
+          
+            <h2>What I Bring</h2>
+            <div class="skill-cards">
+          
+              <div class="skill-card"></div>
+              <div class="skill-card">Skill 2</div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div> -->
+
+<!-- <div class="about" id="about">
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-content">
+        <div class="about-image-section" [@fadeIn]="animationState">
+          <img
+            src="../../assets/images/2024032.jpg"
+            alt="Profile Photo"
+            class="about-profile-photo"
+          />
+        </div>
+        <div class="about-content-section" [@fadeIn]="animationState">
+          <p class="about-welcome-message">Get to know more</p>
+          <h2 class="about-title">About Me</h2>
+          <p class="about-paragraph">
+            Full-Stack Developer with over 1.2 years of experience building
+            high-performance web applications and secure APIs. Proficient in
+            Angular, Node.js, NestJS, and more. Passionate about delivering
+            impactful solutions and enhancing user experiences.
+          </p>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/saurabhwaje"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin" style="margin-right: 5px"></i>
+            </a>
+            <br />
+            <span class="contact-info"
+              >Contact: +917588553476 | Email:
+              saurabhwaje4770&#64;gmail.com</span
+            >
+          </div>
+          <button
+            class="what-i-bring-btn"
+            (click)="showAdditionalContent = !showAdditionalContent"
+          >
+            What I Bring
+          </button>
+          
+          <div *ngIf="showAdditionalContent" class="additional-content">
+          
+            <h2>What I Bring</h2>
+            <div class="skill-cards">
+          
+              <div class="skill-card"></div>
+              <div class="skill-card">Skill 2</div>
+          
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div> -->
+
+<div class="about" id="about">
+  <section class="about-section">
+    <div class="about-container">
+      <div class="about-content">
+        <div class="about-image-section" [@fadeIn]="animationState">
+          <img
+            src="../../assets/images/2024032.jpg"
+            alt="Profile Photo"
+            class="about-profile-photo"
+          />
+        </div>
+        <div class="about-content-section" [@fadeIn]="animationState">
+          <p class="about-welcome-message">Get to know more</p>
+          <h2 class="about-title">About Me</h2>
+          <p class="about-paragraph">
+            Full-Stack Developer with over 1.2 years of experience building
+            high-performance web applications and secure APIs. Proficient in
+            Angular, Node.js, NestJS, and more. Passionate about delivering
+            impactful solutions and enhancing user experiences.
+          </p>
+          <!-- Toggle button to show/hide additional content -->
+          <button
+            class="what-i-bring-btn"
+            (click)="showAdditionalContent = !showAdditionalContent"
+          >
+            What I Bring
+          </button>
+          <!-- Conditional rendering of additional content -->
+          <div *ngIf="showAdditionalContent" class="additional-content">
+            <!-- Add your expertise cards here -->
+            <!-- Full-Stack Expertise -->
+            <div class="expertise-card">
+              <i class="fas fa-desktop"></i>
+              <i class="fas fa-server"></i>
+              <h3>Full-Stack Expertise</h3>
+              <p>
+                Proficient in both front-end (Angular, HTML, CSS) and back-end
+                development (NestJS, Node.js, Java). Experience building
+                high-performance web applications. Skilled in systems design and
+                integration.
+              </p>
+            </div>
+            <!-- Innovative Problem Solver -->
+            <div class="expertise-card">
+              <i class="fas fa-lightbulb"></i>
+              <h3>Innovative Problem Solver</h3>
+              <p>
+                Proven ability to analyze requirements and design effective
+                solutions. Experience integrating technologies like Twilio,
+                Socket.io, and Dialogflow for enhanced functionality. Developed
+                innovative solutions, such as proof-of-concept initiatives,
+                poised to deliver potential cost savings and heightened
+                efficiency.
+              </p>
+            </div>
+            <!-- Collaborative Spirit -->
+            <div class="expertise-card">
+              <i class="fas fa-puzzle-piece"></i>
+              <h3>Collaborative Spirit</h3>
+              <p>
+                Excellent communication and collaboration skills. Experience
+                working effectively within cross-functional teams. Contributed
+                to successful project outcomes through collaborative efforts.
+              </p>
+            </div>
+
+            <!-- Performance Optimization -->
+            <div class="expertise-card">
+              <i class="fas fa-tachometer-alt"></i>
+              <h3>Performance Optimization</h3>
+              <p>
+                Track record of optimizing application performance and reducing
+                server load. Implemented efficient algorithms and caching
+                mechanisms. Innovated testing methodologies to enhance overall
+                system efficacy.
+              </p>
+            </div>
+
+            <!-- Continuous Learner -->
+            <div class="expertise-card">
+              <i class="fas fa-graduation-cap"></i>
+              <h3>Continuous Learner</h3>
+              <p>
+                Committed to staying updated with the latest technologies and
+                industry trends. Actively pursuing certifications and training
+                programs to expand skill set. Quick learner, adept at adapting
+                to new tools and methodologies.
+              </p>
+            </div>
+
+            <!-- Results-Driven -->
+            <div class="expertise-card">
+              <i class="fas fa-chart-bar"></i>
+              <h3>Results-Driven</h3>
+              <p>
+                Focused on delivering impactful results that meet technical
+                requirements and business objectives. Demonstrated ability to
+                identify and resolve problems, optimizing performance and
+                efficiency. Track record of successful project delivery and
+                achievement of key milestones.
+              </p>
+            </div>
+
+            <!-- User-Centric Design -->
+            <div class="expertise-card">
+              <i class="fas fa-user"></i>
+              <h3>User-Centric Design</h3>
+              <p>
+                Dedicated to creating clean, user-centric designs that
+                prioritize the end-user experience. Proficient in UI/UX design
+                principles and best practices. Prioritize usability and
+                accessibility in all development projects.
+              </p>
+            </div>
+
+            <!-- Adaptable and Resilient -->
+            <div class="expertise-card">
+              <i class="fas fa-cogs"></i>
+              <h3>Adaptable and Resilient</h3>
+              <p>
+                Thrive in dynamic environments and adapt quickly to new
+                technologies and methodologies. Able to effectively navigate
+                challenges and setbacks, maintaining focus on project goals.
+                Resilient mindset, able to overcome obstacles and deliver
+                results under pressure.
+              </p>
+            </div>
+
+            <!-- Add more expertise cards as needed -->
+          </div>
+          <div class="social-links">
+            <a
+              href="https://www.linkedin.com/in/saurabhwaje"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fab fa-linkedin" style="margin-right: 5px"></i>
             </a>
             <br />
             <span class="contact-info"

@@ -1,94 +1,57 @@
-/* about.component.css */
+/* Global Styles */
 
-/* Add this to your global styles or app.component.css */
 html {
   scroll-behavior: smooth;
 }
 
+/* About Section */
 
 .about-section {
   position: relative;
   padding: 3rem 0;
-  /* background-color: rgb(247, 237, 226); */
   background-color: #fff9e3;
-  /* background-image: url('../../assets/images/bvcxz.jpg'); */
-  /* background-size: cover; */
   background-position: center;
-  height: 100vh; /* Set height to 100vh */
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; /* Center content vertically */
+  align-items: center;
   font-family: 'Montserrat', sans-serif;
 }
 
-/* Fade-in animation */
-.fade-in-section {
-  opacity: 1;
-}
-
-#about-para {
-  color: #333;
-  font-size: 1rem;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Container for content */
 .about-container {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
 }
 
-/* Content section */
-.about-content {
-  display: flex;
-  flex-direction: column; /* Align items in a column */
-  align-items: center; /* Center items horizontally */
-}
+/* Profile Picture */
 
-/* Profile picture section */
 .about-image-section {
   margin-bottom: 20px;
 }
 
-/* Profile picture styling */
 .about-profile-photo {
   width: auto;
   max-width: 300px;
   border-radius: 50%;
 }
 
-/* Additional styling for about me section */
+/* About Content Section */
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .about-content-section {
-  text-align: center; /* Center-align text */
+  text-align: center;
   color: #333;
-  padding: 0 20px; /* Add some horizontal padding */
+  padding: 0 20px;
 }
 
-.contact-info a {
-  text-decoration: none;
-  color: #007bff;
-  font-size: 70px; /* Increase the size of the icon */
-  margin-right: 0.5rem; /* Adjust spacing between icon and text */
-}
+/* Button Styling */
 
-.contact-info a:hover {
-  text-decoration: underline;
-}
-
-.about-title {
-  font-size: 1.5rem;
-  margin-bottom: 0.7rem;
-  color: #333;
-  font-weight: bold;
-}
-
-.about-welcome-message {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Button styling */
 .about-btn {
   padding: 0.75rem 2rem;
   font-size: 1rem;
@@ -106,20 +69,7 @@ html {
   background-color: #0056b3;
 }
 
-
-@media screen and (max-width: 768px) {
-  .about-content {
-    align-items: center;
-  }
-
-  .about-image-section {
-    margin-bottom: 20px;
-  }
-
-  .about-content-section {
-    margin-top: 0;
-  }
-}
+/* Contact Information */
 
 .contact-info {
   font-size: 14px;
@@ -128,3 +78,62 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* Additional Content */
+
+.what-i-bring-btn {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: transform 0.3s ease;
+}
+
+.what-i-bring-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.additional-content {
+  margin-top: 20px;
+}
+
+.skill-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-card {
+  background-color: #fff9e3;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.expertise-card {
+  background-color: #fdfaf2;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expertise-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+.expertise-card i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.expertise-card:hover i {
+  color: #ec7777;
+}
